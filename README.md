@@ -1,76 +1,161 @@
-# React + TypeScript + Vite
+# 🤖 AI Prompt Library
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+AI Prompt Library is a web application designed to help users create, manage, organize, and reuse AI prompts easily.
 
-Currently, two official plugins are available:
+This application provides a simple and efficient platform where users can store their AI prompts, search them quickly, categorize them, mark favorites, and manage their prompt collection.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 📌 Prompt Management
+- Create new prompts
+- View all saved prompts
+- Delete prompts
+- Duplicate existing prompts
+- Copy prompt content easily
+- Mark prompts as favorite
+- Pin important prompts
 
-## Expanding the ESLint configuration
+### 🔍 Search & Filter
+- Search prompts by title and content
+- Filter prompts by category
+- Sort prompts:
+  - Newest
+  - Oldest
+  - A-Z
+  - Z-A
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 🎨 User Interface
+- Modern responsive UI
+- Clean dashboard layout
+- Dark mode support
+- Drag and drop prompt organization
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 📂 Data Management
+- Import prompts
+- Export prompts
+- Local storage support
+- Backend API integration
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🛠️ Technologies Used
 
-```
+### Frontend
+- React.js
+- TypeScript
+- Vite
+- Tailwind CSS
+- Axios
+- dnd-kit
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Backend
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Tools
+- Git
+- GitHub
+- VS Code
+- Postman
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
 
-```
-"# AI-Prompt-Library" 
+## 📁 Project Structure
+
+
+AI-Prompt-Library
+│
+├── frontend
+│ ├── src
+│ │ ├── components
+│ │ ├── pages
+│ │ ├── types
+│ │ └── App.tsx
+│ │
+│ └── package.json
+│
+├── backend
+│ ├── models
+│ ├── routes
+│ ├── server.js
+│ └── package.json
+│
+└── README.md
+
+
+---
+
+## ⚙️ Installation & Setup
+
+### Clone Repository
+
+```bash
+git clone https://github.com/bablishirbhate/AI-Prompt-Library.git
+
+Navigate into project folder:
+
+cd AI-Prompt-Library
+Frontend Setup
+
+Go to frontend folder:
+
+cd frontend
+
+Install dependencies:
+
+npm install
+
+Run application:
+
+npm run dev
+
+Frontend will start on:
+
+http://localhost:5173
+Backend Setup
+
+Go to backend folder:
+
+cd backend
+
+Install dependencies:
+
+npm install
+
+Create .env file:
+
+PORT=5000
+
+MONGO_URI=your_mongodb_connection_string
+
+Start backend server:
+
+npm run dev
+
+Backend will run on:
+
+http://localhost:5000
+🔗 API Features
+
+The backend provides APIs for:
+
+Create Prompt
+Get All Prompts
+Update Prompt
+Delete Prompt
+
+
+🎯 Future Enhancements
+User Authentication
+AI Model Integration
+Prompt Sharing
+Cloud Database Support
+Prompt History Management
+AI Prompt Recommendation System
+👩‍💻 Author
+
+Babli Shirbhate
